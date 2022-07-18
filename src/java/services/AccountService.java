@@ -18,4 +18,17 @@ public class AccountService {
         
         return null;
     }
+    
+     public User get(String email){
+        UserDB db = new UserDB();
+        
+        try{
+            User user = db.get(email);
+            return user;
+        }catch(Exception ex){
+            
+        }
+        
+        return null;
+    }
 }
